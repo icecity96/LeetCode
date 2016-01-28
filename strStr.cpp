@@ -1,3 +1,7 @@
+//using this way was download in leetcode,People use KMP to solve
+//this question,but I think using built-in function is ok..and later I will
+//push my KMP 
+
 #include <iostream>
 #include <string>
 #include <algorithm>
