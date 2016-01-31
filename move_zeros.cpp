@@ -4,11 +4,10 @@
 #include <algorithm>
 
 using namespace std;
-inline bool iszero(int a){return !a;}
 class Solution {
 	public:
 		void moveZeroes(vector<int>& nums) {
-			auto iter = remove_if(nums.begin(),nums.end(),iszero);
+			auto iter = remove_if(nums.begin(),nums.end(),[](int a){return !a;});
 			for(auto i = iter; i != nums.end(); ++i)
 			{
 				*i = 0;
